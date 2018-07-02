@@ -1,0 +1,11 @@
+<div class='header-bar bg-light'>
+  <div class='brand'>
+    <img class='img-fluid rounded-circle' ng-src='{{data.user.imageUrl}}'>
+    <span>{{data.user.firstName}} {{data.user.lastName}}</span>
+  </div>
+  <div class='options'>
+    <span class='option'>
+      <i ng-click='visible = !visible' ng-class='[visible ? config.arrows.open : config.arrows.closed]'></i>
+    </span>
+  </div>
+</div>

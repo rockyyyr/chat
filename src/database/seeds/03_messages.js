@@ -1,0 +1,48 @@
+exports.seed = async function(knex) {
+  await knex('messages').del()
+  return knex('messages').insert([
+    { chatId: 1000, userId: 1000, timestamp: '1529985224756', content: 'Hey' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985224746', content: 'Hi' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985224736', content: 'Whats up?' },
+    { chatId: 1000, userId: 1000, timestamp: '1529985224726', content: 'Not much. What are you doing' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985224716', content: 'Nothing much. Just chillin' },
+    { chatId: 1000, userId: 1000, timestamp: '1529985224656', content: 'Oh thats cool' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985224556', content: 'Ya im cool' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985224456', content: 'Wanna go to the movies?' },
+    { chatId: 1000, userId: 1000, timestamp: '1529985224356', content: 'Sure. Which movie?' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985224256', content: 'Any movie. I just want to eat popcorn' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985224156', content: 'We can see Starwars' },
+    { chatId: 1000, userId: 1000, timestamp: '1529985224056', content: 'k sounds good. See you at 7!' },
+    { chatId: 1000, userId: 1001, timestamp: '1529985223756', content: 'Ok!' },
+
+    { chatId: 1001, userId: 1000, timestamp: '1529985224756', content: 'Hey' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985224746', content: 'yo' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985224736', content: 'supwit u' },
+    { chatId: 1001, userId: 1000, timestamp: '1529985224726', content: 'Just got home. What are you doing?' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985224716', content: 'lol hangin out bro' },
+    { chatId: 1001, userId: 1000, timestamp: '1529985224656', content: 'Nice' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985224556', content: 'u wann go get beers' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985224456', content: '*beer* *thumbs-up*' },
+    { chatId: 1001, userId: 1000, timestamp: '1529985224356', content: 'aight' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985224256', content: 'lol' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985224156', content: 'come over around 8' },
+    { chatId: 1001, userId: 1000, timestamp: '1529985224056', content: 'Ok' },
+    { chatId: 1001, userId: 1000, timestamp: '1529985223956', content: 'You have bad grammar' },
+    { chatId: 1001, userId: 1002, timestamp: '1529985223756', content: 'lol' },
+
+    { chatId: 1002, userId: 1003, timestamp: '1529985224746', content: 'meow' },
+    { chatId: 1002, userId: 1000, timestamp: '1529985224756', content: 'Hello!' },
+    { chatId: 1002, userId: 1000, timestamp: '1529985224726', content: 'wow!' },
+    { chatId: 1002, userId: 1003, timestamp: '1529985224736', content: 'prrrt' },
+    { chatId: 1002, userId: 1003, timestamp: '1529985224456', content: 'prrrrt meow' },
+    { chatId: 1002, userId: 1003, timestamp: '1529985224716', content: 'mreh mreh' },
+    { chatId: 1002, userId: 1000, timestamp: '1529985224656', content: 'How was your day?' },
+    { chatId: 1002, userId: 1003, timestamp: '1529985224556', content: 'prrrrrrrrt mreh mreh' },
+    { chatId: 1002, userId: 1000, timestamp: '1529985224356', content: 'Wow!!!' },
+    { chatId: 1002, userId: 1003, timestamp: '1529985224256', content: 'mreh meow prrrrt' },
+    { chatId: 1002, userId: 1003, timestamp: '1529985224156', content: 'meow meow meow meow meow meow prrt meow' },
+    { chatId: 1002, userId: 1000, timestamp: '1529985224056', content: 'Ok' },
+    { chatId: 1002, userId: 1003, timestamp: '1529985223756', content: 'meow prrrrrrrrrt mreh' },
+    { chatId: 1002, userId: 1000, timestamp: '1529985223956', content: '**scratches on cat post**' }
+  ])
+}

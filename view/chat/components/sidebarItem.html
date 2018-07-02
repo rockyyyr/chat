@@ -1,0 +1,12 @@
+<button class='btn btn-light sidebar-item' ng-click='loadMessages(contact.userId)'>
+  <div class='image'>
+    <img class='img-fluid rounded-circle' ng-src='{{contact.imageUrl}}' alt=''>
+  </div>
+  <div class='contact'>
+    <div class='info'>{{contact.firstName}} {{contact.lastName}}</div>
+    <div class='last-message'>{{contact.lastMessage}}</div>
+  </div>
+  <div class='timestamp'>
+    {{formatDate(contact.joinedDate)}}
+  </div>
+</button>

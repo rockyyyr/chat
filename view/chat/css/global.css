@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body, .conversation-window {
+  height: 100vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.rounded-circle {
+  box-sizing: content-box;
+  border: 2px solid lightgrey;
+}
+
+.content {
+  /* margin-top: 90px; */
+  display: flex;
+  flex-direction: row;
+}
+
+.conversation-window {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+
+  .sidebar-container {
+    display: none;
+  }
+
+  .message-input-container {
+    left: 0px !important;
+  }
+
+  .fixed-bottom {
+    left: 0;
+  }
+
+}

@@ -1,0 +1,20 @@
+.message-input-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 60px;
+  padding: 10px;
+  border-top: 1px solid lightgrey;
+}
+
+.message-input-container.shrink {
+  left: 350px;
+}
+
+.message-input-container.expand {
+  left: 0;
+}
+
+.message-input-button {
+  width: 100px;
+}

@@ -1,0 +1,98 @@
+{
+  "info": {
+    "firstName": "Rocky",
+    "lastName": "Robson",
+    "uid": "10040"
+  },
+
+  "settings": {
+    "theme": "light"
+  },
+
+  "contacts": [
+    {
+      "uid": "10030",
+      "firstName": "Brittany",
+      "lastName": "Ng",
+      "lastMessage": "I like everything",
+      "timestamp": "1529471782111"
+    },
+    {
+      "uid": "10050",
+      "firstName": "Craig",
+      "lastName": "Cervo",
+      "lastMessage": "Wanna go fishing?",
+      "timestamp": "1529471582111"
+    },
+    {
+      "uid": "10060",
+      "firstName": "Hello",
+      "lastName": "the Cat",
+      "lastMessage": "Meow prrr meow",
+      "timestamp": "1529461782111"
+    },
+    {
+      "uid": "10030",
+      "firstName": "Brittany",
+      "lastName": "Ng",
+      "lastMessage": "I like everything",
+      "timestamp": "1529471782111"
+    },
+    {
+      "uid": "10050",
+      "firstName": "Craig",
+      "lastName": "Cervo",
+      "lastMessage": "Wanna go fishing?",
+      "timestamp": "1529471582111"
+    },
+    {
+      "uid": "10060",
+      "firstName": "Hello",
+      "lastName": "the Cat",
+      "lastMessage": "Meow prrr meow",
+      "timestamp": "1529461782111"
+    },
+    {
+      "uid": "10030",
+      "firstName": "Brittany",
+      "lastName": "Ng",
+      "lastMessage": "I like everything",
+      "timestamp": "1529471782111"
+    },
+    {
+      "uid": "10050",
+      "firstName": "Craig",
+      "lastName": "Cervo",
+      "lastMessage": "Wanna go fishing?",
+      "timestamp": "1529471582111"
+    },
+    {
+      "uid": "10060",
+      "firstName": "Hello",
+      "lastName": "the Cat",
+      "lastMessage": "Meow prrr meow",
+      "timestamp": "1529461782111"
+    },
+    {
+      "uid": "10030",
+      "firstName": "Brittany",
+      "lastName": "Ng",
+      "lastMessage": "I like everything",
+      "timestamp": "1529471782111"
+    },
+    {
+      "uid": "10050",
+      "firstName": "Craig",
+      "lastName": "Cervo",
+      "lastMessage": "Wanna go fishing?",
+      "timestamp": "1529471582111"
+    },
+    {
+      "uid": "10060",
+      "firstName": "Hello",
+      "lastName": "the Cat",
+      "lastMessage": "Meow prrr meow",
+      "timestamp": "1529461782111"
+    }
+  ]
+}

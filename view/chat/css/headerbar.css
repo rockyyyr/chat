@@ -1,0 +1,26 @@
+.header-bar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  height: 90px;
+  width: 100%;
+  padding: 5px 15px;
+
+  border-bottom: 1px solid lightgrey;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(105, 104, 104);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.header-bar > .brand {
+  font-size: 25px;
+}
+
+.header-bar > .options > .option {
+  font-size: 30px;
+}
