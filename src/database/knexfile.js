@@ -2,10 +2,13 @@ module.exports = {
 
   development: {
     client: 'mysql2',
-    connection: require('../../config/database.json'),
+    connection: process.env.CLEARDB_DATABASE_URL,
     pool: {
       min: 1,
       max: 10
+    },
+    seeds: {
+      directory: './build/src/database/seeds'
     }
   },
 
@@ -18,6 +21,6 @@ module.exports = {
     },
     seeds: {
       directory: './build/src/database/seeds'
-  }
+    }
   }
 }
