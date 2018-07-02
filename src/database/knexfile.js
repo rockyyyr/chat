@@ -6,9 +6,6 @@ module.exports = {
     pool: {
       min: 1,
       max: 10
-    },
-    seeds: {
-      directory: './src/database/seeds'
     }
   },
 
@@ -18,9 +15,6 @@ module.exports = {
     pool: {
       min: 1,
       max: 10
-    },
-    seeds: {
-      directory: './src/database/seeds'
     }
   }
 }
