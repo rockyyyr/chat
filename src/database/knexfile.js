@@ -8,7 +8,7 @@ module.exports = {
       max: 10
     },
     seeds: {
-      directory: './build/src/database/seeds'
+      directory: './src/database/seeds'
     }
   },
 
@@ -20,7 +20,7 @@ module.exports = {
       max: 10
     },
     seeds: {
-      directory: './build/src/database/seeds'
+      directory: './src/database/seeds'
     }
   }
 }
