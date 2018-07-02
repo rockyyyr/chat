@@ -15,6 +15,9 @@ module.exports = {
     pool: {
       min: 1,
       max: 10
-    }
+    },
+    seeds: {
+      directory: './build/src/database/seeds'
+  }
   }
 }

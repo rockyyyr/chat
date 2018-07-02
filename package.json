@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon --exec ts-node ./main.ts",
-    "migrate:latest": "NODE_ENV=development ts-node ./src/database/service.ts"
+    "start": "NODE_ENV=production node build/main.js",
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "migrate": "knex migrate:latest --env production --knexfile ./build/src/database/knexfile.js",
+    "seed": "knex seed:run --env production --knexfile ./build/src/database/knexfile.js",
+    "dev": "NODE_ENV=development nodemon --exec ts-node ./main.ts"
   },
   "keywords": [],
   "author": "",

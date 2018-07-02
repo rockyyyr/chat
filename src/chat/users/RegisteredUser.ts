@@ -1,17 +1,17 @@
-import User from "./User";
+// import User from "./User";
 
-export default class RegisteredUser extends User {
+// export default class RegisteredUser extends User {
 
-  private userId: string
-  private settings: any
+//   private userId: string
+//   private settings: any
 
-  constructor({ firstName, lastName, email, userId }) {
-    super({ firstName, lastName, email })
-    this.userId = userId
-  }
+//   constructor({ firstName, lastName, email, userId }) {
+//     super({ firstName, lastName, email })
+//     this.userId = userId
+//   }
 
-  public getUserId(): string {
-    return this.userId
-  }
+//   public getUserId(): string {
+//     return this.userId
+//   }
 
-}
+// }

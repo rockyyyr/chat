@@ -2,7 +2,7 @@ app.controller('data', ($scope, $http, $compile, $location) => {
 
   const headers = { 'Authorization': 'Bearer ' + new URL(location.href).searchParams.get('token') }
 
-  $http.get('http://192.168.0.19:3000/chat/init', { headers }).then(response => {
+  $http.get('/chat/init', { headers }).then(response => {
 
     if (response.data.error) {
       console.log(response.data.error)
@@ -11,7 +11,7 @@ app.controller('data', ($scope, $http, $compile, $location) => {
 
     $scope.data = response.data
     $scope.data.chats.forEach(chat => {
-      $http.get('http://192.168.0.19:3000/chat/' + chat.chatId + '/messages', { headers }).then(response => {
+      $http.get('/chat/' + chat.chatId + '/messages', { headers }).then(response => {
 
         if (response.data.error) {
           console.log(response.data.error)
@@ -29,7 +29,7 @@ app.controller('data', ($scope, $http, $compile, $location) => {
   $scope.currentTime = () => new Date().toTimeString()
 
   $(() => {
-    const socket = io('http://192.168.0.19:3000')
+    const socket = io('/')
     const chatWindow = $('.chat-window')
     const chat = $('#chat')
     const send = $('#send')

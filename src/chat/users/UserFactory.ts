@@ -23,6 +23,7 @@ export default class UserFactory {
 
   public static googleProfile(profile: any): User {
     return new User({
+      userId: null,
       firstName: profile.name.givenName,
       lastName: profile.name.familyName,
       email: profile.emails[0].value,
