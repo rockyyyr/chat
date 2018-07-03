@@ -1,1 +1,0 @@
-{"version":3,"file":"MessageFactory.js","sourceRoot":"","sources":["../../../../src/chat/messages/MessageFactory.ts"],"names":[],"mappings":";;;;;AAAA,wDAAgC;AAEhC;IAES,MAAM,CAAC,YAAY,CAAC,IAAiC;QAC1D,OAAO,IAAI,iBAAO,mBAAM,IAAI,IAAE,SAAS,EAAE,cAAc,CAAC,SAAS,EAAE,IAAG,CAAA;IACxE,CAAC;IAEO,MAAM,CAAC,SAAS;QACtB,OAAO,IAAI,CAAC,GAAG,EAAE,CAAA;IACnB,CAAC;CACF;AATD,iCASC"}

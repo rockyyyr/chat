@@ -1,1 +1,0 @@
-{"version":3,"file":"GenericSocketEvent.js","sourceRoot":"","sources":["../../../../src/server/sockets/GenericSocketEvent.ts"],"names":[],"mappings":";;;;;;;;;;AAEA;IAKE,YAAY,SAAiB,EAAE,OAAiB;QAC9C,IAAI,CAAC,IAAI,GAAG,SAAS,CAAA;QACrB,IAAI,CAAC,OAAO,GAAG,OAAO,CAAA;IACxB,CAAC;IAEY,MAAM,CAAC,IAAS;;YAC3B,OAAO,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC,CAAA;QAC3B,CAAC;KAAA;CACF;AAbD,qCAaC"}

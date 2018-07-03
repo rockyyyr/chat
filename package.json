@@ -6,9 +6,9 @@
   "scripts": {
     "start": "NODE_ENV=production node ./build/main.js",
     "build": "tsc",
-    "postinstall": "npm run build && npm run migrate",
-    "migrate": "knex migrate:latest --env production --knexfile ./src/database/knexfile.js",
-    "seed": "knex seed:run --env production --knexfile ./src/database/knexfile.js",
+    "postinstall": "npm run build",
+    "migrate": "knex migrate:latest --env production --knexfile ./build/src/database/knexfile.ts",
+    "seed": "knex seed:run --env production --knexfile ./build/src/database/knexfile.ts",
     "dev": "NODE_ENV=development nodemon --exec ts-node ./main.ts"
   },
   "keywords": [],

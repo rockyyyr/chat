@@ -1,4 +1,4 @@
-const config = require('./knexfile.js')
+import config from './knexfile'
 import Knex from 'knex'
 
 export default class Database {
@@ -12,6 +12,6 @@ export default class Database {
   }
 
   constructor() {
-    this.instance = Knex(config[process.env.NODE_ENV])
+    this.instance = Knex(config)
   }
 }
