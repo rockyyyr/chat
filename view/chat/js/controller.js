@@ -44,6 +44,8 @@ app.controller('data', ($scope, $http, $compile, $location) => {
     })
 
     send.click(() => {
+      console.log('sending click event...')
+      console.log('message length:', message.val().length)
       if (message.val().length > 0) {
         socket.emit('message', {
           chatId: $scope.currentChatId,
