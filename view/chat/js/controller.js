@@ -29,7 +29,7 @@ app.controller('data', ($scope, $http, $compile, $location) => {
   $scope.currentTime = () => new Date().toTimeString()
 
   $(() => {
-    const socket = io('https://rocky-chat.herokuapp.com')
+    const socket = io('/')
     const chatWindow = $('.chat-window')
     const chat = $('#chat')
     const send = $('#send')
@@ -41,13 +41,15 @@ app.controller('data', ($scope, $http, $compile, $location) => {
     console.log(send)
     console.log(socket)
 
+    send.trigger('click')
+
     message.keypress(event => {
       if (event.which == 13) {
         send.trigger('click')
       }
     })
 
-    send.click(() => {
+    $(document).on('click', '#send', () => {
       console.log('sending click event...')
       console.log('message length:', message.val().length)
 
