@@ -1,3 +1,10 @@
+const socket = io('/')
+const chatWindow = $('.chat-window')
+const chat = $('#chat')
+const send = $('#send')
+const sidebar = $('#sidebar')
+const message = $('#message-input')
+
 app.controller('data', ($scope, $http, $compile, $location) => {
 
   const headers = { 'Authorization': 'Bearer ' + new URL(location.href).searchParams.get('token') }
@@ -17,7 +24,7 @@ app.controller('data', ($scope, $http, $compile, $location) => {
           console.log(response.data.error)
           return
         }
-        
+
         chat.messages = response.data
       })
     })
@@ -29,19 +36,7 @@ app.controller('data', ($scope, $http, $compile, $location) => {
   $scope.currentTime = () => new Date().toTimeString()
 
   $(() => {
-    const socket = io('/')
-    const chatWindow = $('.chat-window')
-    const chat = $('#chat')
-    const send = $('#send')
-    const sidebar = $('#sidebar')
-    const message = $('#message-input')
     const userId = 1000
-
-    console.log('initializing...')
-    console.log(send)
-    console.log(socket)
-
-    send.trigger('click')
 
     message.keypress(event => {
       if (event.which == 13) {
@@ -49,7 +44,7 @@ app.controller('data', ($scope, $http, $compile, $location) => {
       }
     })
 
-    $(document).on('click', '#send', () => {
+    send.click(() => {
       console.log('sending click event...')
       console.log('message length:', message.val().length)
 
